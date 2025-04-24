@@ -127,8 +127,7 @@ if st.button("Executar Processo"):
     plantuml_url = f"https://www.plantuml.com/plantuml/png/~h{encoded}"
 
     st.subheader("📈 Diagrama Gerado")
-    st.image(plantuml_url, caption="Diagrama de Atividades Gerado", use_column_width=True)
-
+    st.image(plantuml_url, caption="Diagrama de Atividades Gerado", use_container_width=True)
     st.download_button("📥 Baixar código PlantUML", plantuml_code, file_name="diagrama.puml")
 
     st.code(plantuml_code, language='text')
